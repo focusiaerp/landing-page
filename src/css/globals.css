@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --container: 1428px; /* Adjusted for better responsiveness */
+  --border-radius: 6px; /* Default border radius */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --container-container: var(--container);
+}
+
+* {
+  font-family: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.body-text-white {
+  color: #fff9;
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.right-hero-section {
+  grid-column-gap: var(--border-radius);
+  grid-row-gap: var(--border-radius);
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.image-load-wrapper {
+  border-radius: var(--border-radius);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-load-element {
+  z-index: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.portrait-orientation {
+  aspect-ratio: 3 / 4;
+}
+
+.some-grid-area-thing {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+.card {
+  border-radius: var(--border-radius);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .stat-card {
+  background-color: black;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.heading-h3 {
+  letter-spacing: -0.01em;
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 1.15em;
+}
