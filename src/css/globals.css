@@ -10,6 +10,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-emerald-999: #083630;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --container-container: var(--container);
@@ -75,13 +76,13 @@ body {
 
 .card {
   border-radius: var(--border-radius);
-  padding: 24px;
   position: relative;
   overflow: hidden;
 }
 
-.card .stat-card {
+.stat-card {
   background-color: black;
+  padding: 24px;
   height: 100%;
   color: white;
   display: flex;
