@@ -11,8 +11,8 @@ const Header = () => {
           <Image
             src="/focusia-logo.png"
             alt="Logo"
-            width={48}
-            height={48}
+            width={50}
+            height={50}
             className="justify-self-start"
           />
 
@@ -23,18 +23,21 @@ const Header = () => {
                 href="#"
                 className="text-black transition-colors hover:opacity-60"
               >
-                Overview
+                Início
               </a>
               <div className="relative">
                 <a href="#" className="text-black transition-colors flex gap-1">
-                  Pages
-                  <div className="rounded-full w-1.5 h-1.5 bg-black"></div>
+                  Planos
+                  <div className="relative">
+                    <div className="absolute rounded-full w-1.5 h-1.5 bg-emerald-800 animate-ping"></div>
+                    <div className="rounded-full w-1.5 h-1.5 bg-emerald-800"></div>
+                  </div>
                 </a>
               </div>
               <div className="relative">
                 <a href="#" className="text-black transition-colors flex gap-1">
-                  Information
-                  <div className="rounded-full w-1.5 h-1.5 bg-black"></div>
+                  Sobre
+                  {/* <div className="rounded-full w-1.5 h-1.5 bg-emerald-900"></div> */}
                 </a>
               </div>
             </div>
@@ -44,8 +47,8 @@ const Header = () => {
           <div className="flex items-center space-x-4 justify-self-end">
             <Search className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer transition-colors" />
             <span className="text-gray-600">Templates</span>
-            <button className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
-              Buy Artifact
+            <button className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors cursor-pointer">
+              Começar agora
             </button>
           </div>
         </div>

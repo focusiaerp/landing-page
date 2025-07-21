@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { SparklesIcon, Star } from "lucide-react";
+import { MicIcon, Star } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -13,16 +13,19 @@ const HeroSection = () => {
               Focus IA ERP
             </p>
             <h1 className="text-5xl lg:text-[56px] font-medium font-sans text-black leading-tight">
-              Simplifique operações em uma plataforma unificada
+              Simplifique operações em uma plataforma{" "}
+              <span className="text-emerald-950 underline">unificada</span>
             </h1>
             <p className="text-black text-[17px]">
               A plataforma unificada da Focus IA transforma insights dispersos
               em automação otimizada — conhecimento técnico opcional.
             </p>
 
-            <button className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors">
-              Começar agora
-            </button>
+            <div className="relative">
+              <button className="bg-emerald-950/90 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-emerald-999 transition-colors cursor-pointer">
+                Começar agora
+              </button>
+            </div>
 
             {/* Reviews */}
             <div className="flex items-center space-x-2 text-sm">
@@ -72,13 +75,31 @@ const HeroSection = () => {
 
               {/* Feature Card */}
               <div className="card flex py-12 items-center justify-center some-grid-area-thing">
-                <div className="flex items-center justify-center gap-4 rounded-lg bg-black/10 backdrop-blur-md text-white py-3 pl-[18px] pr-6 font-medium">
-                  <div className="">
-                    <SparklesIcon className="w-6 h-6" />
+                {/* Graphic Canvas */}
+
+                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                  {/* Graphic Wrapper */}
+
+                  <div className="z-0 pointer-events-none min-w-[130%] h-auto min-h-full">
+                    <Image
+                      src="https://cdn.prod.website-files.com/6762dffab2725f2bea161783/676588d261a99a0f82ba3298_background-v7-finatech-x-webflow-template.jpg"
+                      alt=""
+                      fill
+                    />
                   </div>
-                  <span className="font-medium">
-                    Resumir tendências dos dados de vendas do Q1
-                  </span>
+                </div>
+
+                <div className="relative">
+                  <div className="absolute top-0 left-2 w-12 h-12 rounded-full bg-gradient-to-br from-green-800 to-green-600 self-center animate-pulse"></div>
+
+                  <div className="flex z-10 items-center justify-center gap-4 rounded-lg bg-black/40 backdrop-blur-lg text-white py-3 pl-[18px] pr-6 font-medium">
+                    <div className="">
+                      <MicIcon className="w-6 h-6" />
+                    </div>
+                    <span className="font-medium">
+                      Resuma as tendências de vendas do primeiro trimestre
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
