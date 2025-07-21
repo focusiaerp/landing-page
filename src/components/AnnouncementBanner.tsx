@@ -89,14 +89,14 @@ const AnnouncementBanner = () => {
             <div className="flex gap-3 mr-3">
               <div className="text-sm">🎉</div>
               <div className="text-sm">
-                <span className="font-medium">Exciting news!</span> Artifact v1
-                is now live and ready to{" "}
+                <span className="font-medium">Aproveite!</span> Todos planos
+                anuais com 3 meses grátis na primeira{" "}
                 <a
                   href="https://mmra.re/purchaseartifact"
                   target="_blank"
-                  className="underline-link"
+                  className="underline"
                 >
-                  purchase!
+                  assinatura!
                 </a>
               </div>
             </div>
