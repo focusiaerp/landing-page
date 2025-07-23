@@ -46,7 +46,9 @@ const Header = () => {
           {/* Right side */}
           <div className="flex items-center space-x-4 justify-self-end">
             <Search className="w-5 h-5 text-gray-600 hover:text-black cursor-pointer transition-colors" />
-            <span className="text-gray-600">Templates</span>
+            <button className="bg-emerald-50/30 border border-gray-500 px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-50 transition-colors cursor-pointer">
+              Entrar
+            </button>
             <button className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors cursor-pointer">
               Começar agora
             </button>

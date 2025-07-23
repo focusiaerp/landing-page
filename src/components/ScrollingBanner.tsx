@@ -2,14 +2,10 @@ import React from "react";
 
 const ScrollingBanner = () => {
   const items = [
-    { text: "Build better.", icon: "🔧" },
-    { text: "Ideate faster.", icon: "💡" },
-    { text: "Work smarter.", icon: "🎯" },
-    { text: "Grow quicker.", icon: "📈" },
-    { text: "Build better.", icon: "🔧" },
-    { text: "Ideate faster.", icon: "💡" },
-    { text: "Work smarter.", icon: "🎯" },
-    { text: "Grow quicker.", icon: "📈" },
+    { text: "Construa melhor.", icon: "🔧" },
+    { text: "Crie rápido.", icon: "💡" },
+    { text: "Trabalhe inteligente.", icon: "🎯" },
+    { text: "Cresça rápido.", icon: "📈" },
   ];
 
   return (
@@ -20,10 +16,10 @@ const ScrollingBanner = () => {
             key={index}
             className="flex items-center space-x-4 mx-8 whitespace-nowrap"
           >
-            <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
-              <span className="text-xl">{item.icon}</span>
+            <div className="w-12 h-12 bg-white/10 rounded-lg p-9 flex items-center justify-center">
+              <span className="text-5xl">{item.icon}</span>
             </div>
-            <span className="text-2xl font-bold">{item.text}</span>
+            <span className="text-6xl font-medium">{item.text}</span>
           </div>
         ))}
       </div>

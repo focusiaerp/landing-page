@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { MicIcon, Star } from "lucide-react";
+import { MicIcon } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
             </p>
             <h1 className="text-5xl lg:text-[56px] font-medium font-sans text-black leading-tight">
               Simplifique operações em uma plataforma{" "}
-              <span className="text-emerald-950 underline">unificada</span>
+              <span className="underline-text">unificada</span>
             </h1>
             <p className="text-black text-[17px]">
               A plataforma unificada da Focus IA transforma insights dispersos
@@ -22,23 +22,9 @@ const HeroSection = () => {
             </p>
 
             <div className="relative">
-              <button className="bg-emerald-950/90 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-emerald-999 transition-colors cursor-pointer">
+              <button className="bg-emerald-950 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-emerald-999 transition-colors cursor-pointer">
                 Começar agora
               </button>
-            </div>
-
-            {/* Reviews */}
-            <div className="flex items-center space-x-2 text-sm">
-              <span className="text-gray-500">G2</span>
-              <div className="flex items-center space-x-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-3 h-3 fill-gray-600 text-gray-600"
-                  />
-                ))}
-              </div>
-              <span className="text-gray-600">620+ Reviews</span>
             </div>
           </div>
 
@@ -48,13 +34,14 @@ const HeroSection = () => {
               {/* Profile Card */}
               <div className="image-load-wrapper">
                 <Image
-                  src="https://cdn.prod.website-files.com/67bd4583544503c3feb08305/67c4dfcc612272307863e666_photo-square-15.webp"
+                  src="https://cdn.prod.website-files.com/67721265f59069a5268af325/6779cdc6c6fdc72c7ede579e_about%20hero%20image-p-1600.webp"
                   alt="Professional headshot"
                   width={324}
                   height={432}
-                  sizes="(max-width: 1280px) 100vw, 1280px"
-                  className="image-load-element portrait-orientation object-cover"
+                  className="portrait-orientation object-cover"
                   priority
+                  sizes="(max-width: 1920px) 100vw, 50vw"
+                  style={{ objectPosition: "77% bottom" }}
                 />
               </div>
 
@@ -90,7 +77,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="relative">
-                  <div className="absolute top-0 left-2 w-12 h-12 rounded-full bg-gradient-to-br from-green-800 to-green-600 self-center animate-pulse"></div>
+                  <div className="absolute top-0 left-1.5 w-12 h-12 rounded-full bg-gradient-to-br from-green-800 to-green-600 self-center animate-pulse"></div>
 
                   <div className="flex z-10 items-center justify-center gap-4 rounded-lg bg-black/40 backdrop-blur-lg text-white py-3 pl-[18px] pr-6 font-medium">
                     <div className="">

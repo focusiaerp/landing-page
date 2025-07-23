@@ -3,13 +3,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --container: 1428px; /* Adjusted for better responsiveness */
+  --neutral: #f6f4f1;
+  --container: 89.25rem; /* Adjusted for better responsiveness */
+  --medium: 768px; /* Medium breakpoint */
   --border-radius: 6px; /* Default border radius */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-neutral: var(--neutral);
   --color-emerald-999: #083630;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -35,12 +38,23 @@ body {
   }
 }
 
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
 .body-text-white {
   color: #fff9;
 }
 
-.animate-scroll {
-  animation: scroll 30s linear infinite;
+.container {
+  max-width: var(--container);
+  flex-flow: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
 }
 
 .right-hero-section {
@@ -57,13 +71,6 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-}
-
-.image-load-element {
-  z-index: 0;
-  width: 100%;
-  display: block;
-  position: relative;
 }
 
 .portrait-orientation {
@@ -95,4 +102,18 @@ body {
   font-size: 33px;
   font-weight: 500;
   line-height: 1.15em;
+}
+
+.vertical-content {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-flow: column;
+  display: flex;
+}
+
+.underline-text {
+  background-image: url(/underline.svg);
+  background-position: 50% 106%;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
